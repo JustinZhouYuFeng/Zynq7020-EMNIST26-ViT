@@ -1,0 +1,47 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
+| Date         : Sat Jun 20 03:49:44 2026
+| Host         : LAPTOP-SQ1PBBIP running 64-bit major release  (build 9200)
+| Command      : report_ip_status
+------------------------------------------------------------------------------------
+
+IP Status Summary
+
+1. Project IP Status
+--------------------
+Your project uses 5 IP. Some of these IP may have undergone changes in this release of the software. Please review the recommended actions.
+
+More information on the Xilinx versioning policy is available at www.xilinx.com.
+
+Project IP Instances
++---------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| Instance Name                   | Status     | Recommendation      | Change    | IP Name            | IP      | New Version   | New        | Original Part        |
+|                                 |            |                     | Log       |                    | Version |               | License    |                      |
++---------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_axi_mem_intercon_0     | Up-to-date | No changes required |  *(1)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 22) | Included   | xc7z020clg400-1      |
+|                                 |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                 |            |                     |           |                    | 22)     |               |            |                      |
++---------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_processing_system7_0_0 | Up-to-date | No changes required |  *(2)     | ZYNQ7 Processing   | 5.5     | 5.5 (Rev. 6)  | Included   | xc7z020clg400-1      |
+|                                 |            |                     |           | System             | (Rev.   |               |            |                      |
+|                                 |            |                     |           |                    | 6)      |               |            |                      |
++---------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_ps7_0_axi_periph_0     | Up-to-date | No changes required |  *(3)     | AXI Interconnect   | 2.1     | 2.1 (Rev. 22) | Included   | xc7z020clg400-1      |
+|                                 |            |                     |           |                    | (Rev.   |               |            |                      |
+|                                 |            |                     |           |                    | 22)     |               |            |                      |
++---------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_rst_ps7_0_50M_0        | Up-to-date | No changes required |  *(4)     | Processor System   | 5.0     | 5.0 (Rev. 13) | Included   | xc7z020clg400-1      |
+|                                 |            |                     |           | Reset              | (Rev.   |               |            |                      |
+|                                 |            |                     |           |                    | 13)     |               |            |                      |
++---------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+| design_1_vit_tlayer_fused_0_0   | Up-to-date | No changes required | Change    | Vit_transformer_la | 1.0     | 1.0 (Rev. 25) | Included   | xc7z020clg400-1      |
+|                                 |            |                     | Log not   |                    | (Rev.   |               |            |                      |
+|                                 |            |                     | available |                    | 25)     |               |            |                      |
++---------------------------------+------------+---------------------+-----------+--------------------+---------+---------------+------------+----------------------+
+*(1) d:/fpga/Vivado/2020.1/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(2) d:/fpga/Vivado/2020.1/data/ip/xilinx/processing_system7_v5_5/doc/processing_system7_v5_5_changelog.txt
+*(3) d:/fpga/Vivado/2020.1/data/ip/xilinx/axi_interconnect_v2_1/doc/axi_interconnect_v2_1_changelog.txt
+*(4) d:/fpga/Vivado/2020.1/data/ip/xilinx/proc_sys_reset_v5_0/doc/proc_sys_reset_v5_0_changelog.txt
+
+

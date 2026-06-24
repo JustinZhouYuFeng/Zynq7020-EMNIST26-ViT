@@ -1,0 +1,193 @@
+﻿[COM9] OPEN
+[COM9] GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_RX_IMAGE len=7[COM9] 84 from=192.168.1.100:55485
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x00000000 base_pred=0x00000000 path=fused_transformer_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x00002636 infer_ms=42 patch_ms=4 pl_stack_ms=38 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.168.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x00000001 base_pred=0x00000001 path=fused_transformer_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x0000302F[COM9]  infer_ms=42 patch_ms=4 pl_stack_ms=37 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.168.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x00000002 base_pred=0x00000002 path=fused_trans[COM9] former_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x00002E90 infer_ms=42 patch_ms=4 pl_stack_ms=37 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.168.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x00000003 base_[COM9] pred=0x0000000F path=fused_transformer_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x00001486 infer_ms=42 patch_ms=4 pl_stack_ms=38 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.168.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x00000004 base_[COM9] pred=0x00000004 path=fused_transformer_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x000031DC infer_ms=42 patch_ms=4 pl_stack_ms=37 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] GEM_STATS rx=0x00000001 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txs[COM9] r=0x00000000
+UDP_RX_IMAGE len=784 from=192.168.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x00000005 base_pred=0x00000005 path=fused_transformer_pl depth=3 embed=64 mlp=2[COM9] 56 classes=26 dataset=emnist-letters logit_pred_milli=0x0000384D infer_ms=42 patch_ms=4 pl_stack_ms=37 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.16[COM9] 8.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x00000006 base_[COM9] pred=0x00000006 path=fused_transformer_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x000024F1 infer_ms=44 patch_ms=4 pl_stack_ms=37 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.168.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x00000007 base_pred=0x00000007 path=fused_trans[COM9] former_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x00002E14 infer_ms=42 patch_ms=4 pl_stack_ms=38 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.16[COM9] 8.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x00000008 base_[COM9] pred=0x00000008 path=fused_transformer_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x000024F0 infer_ms=44 patch_ms=4 pl_stack_ms=37 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.16[COM9] 8.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x00000008 base_pred=0x00000008 path=fused_transformer_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x00002477 infer_ms=44 patch_ms=4 pl_stack[COM9] _ms=38 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.168.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x0000000A base_[COM9] pred=0x0000000A path=fused_transformer_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x00002D14 infer_ms=42 patch_ms=4 pl_stack_ms=38 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.168.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x0000000B base_pred=0x0000000B path=fused_transformer_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x00002728 infer_ms=42 patch_ms=4 pl_stack_ms=38 head_ms=0
+WAIT_UDP_IMAGE[COM9] _784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.168.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x0000000C base_[COM9] pred=0x0000000C path=fused_transformer_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x000038C4 infer_ms=42 patch_ms=4 pl_stack_ms=37 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.16[COM9] 8.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x0000000D base_[COM9] pred=0x0000000D path=fused_transformer_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x00002FE9 infer_ms=42 patch_ms=4 pl_stack_ms=37 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.168.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x0000000E base_pred=0x0000000E path=fused_trans[COM9] former_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x00002DEB infer_ms=42 patch_ms=4 pl_stack_ms=37 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.168.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x0000000F base_pred=0x0000000F path=fused_transformer_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x00002C03 infer_ms=42 patch_ms=4 pl_stack_ms=38 head_ms=0
+WAIT_UDP_IMAGE[COM9] _784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.16[COM9] 8.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x00000010 base_[COM9] pred=0x00000010 path=fused_transformer_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x00002E44 infer_ms=42 patch_ms=4 pl_stack_ms=37 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.168.1.100:55485
+GEM_STATS rx=0x00[COM9] 000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x00000011 base_[COM9] pred=0x00000011 path=fused_transformer_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x000033FC infer_ms=42 patch_ms=4 pl_stack_ms=37 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.16[COM9] 8.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x00000012 base_[COM9] pred=0x00000012 path=fused_transformer_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x000033F6 infer_ms=42 patch_ms=4 pl_stack_ms=37 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.168.1.100:55485
+GEM_STATS rx=0x00[COM9] 000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x00000013 base_[COM9] pred=0x00000013 path=fused_transformer_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x00002DDB infer_ms=42 patch_ms=4 pl_stack_ms=37 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.168.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x00000014 base_pred=0x00000014 path=fused_transformer_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x00002994 infer_ms=45 patch_ms=4 pl_stack[COM9] _ms=37 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.168.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x00000015 base_pred=0x00000014 path=fused_transformer_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x000021A9[COM9]  infer_ms=45 patch_ms=4 pl_stack_ms=38 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] GEM_STATS rx=0x00000001 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_RX_IMAGE len=7[COM9] 84 from=192.168.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x00000016 base_pred=0x00000016 path=fused_transformer_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x000031D7 infer_ms=42 patch_ms=4 pl_stack_ms=38 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000[COM9] 000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.168.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x00000017 base_pred=0x00000017 path=fused_trans[COM9] former_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x000030BD infer_ms=42 patch_ms=4 pl_stack_ms=37 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.168.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x00000018 base_[COM9] pred=0x00000006 path=fused_transformer_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x000019FC infer_ms=44 patch_ms=4 pl_stack_ms=37 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+[COM9] UDP_RX_IMAGE len=784 from=192.16[COM9] 8.1.100:55485
+GEM_STATS rx=0x00000000 tx=0x00000001 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+UDP_INFER_BEGIN len=784
+UDP_RESULT pred=0x00000019 base_[COM9] pred=0x00000019 path=fused_transformer_pl depth=3 embed=64 mlp=256 classes=26 dataset=emnist-letters logit_pred_milli=0x00002264 infer_ms=42 patch_ms=4 pl_stack_ms=38 head_ms=0
+WAIT_UDP_IMAGE_784_BYTES
+GEM_STATS rx=0x00000000 tx=0x00000000 rx_fcs=0x00000000 rx_sym=0x00000000 rx_align=0x00000000 isr=0x00000000 rxsr=0x00000000 txsr=0x00000000
+
+
+SUMMARY
+index=0 label=0 pred=0 base_pred=0 model_pred=0 ack=True correct=True model_match=True infer_ms=42
+index=1 label=1 pred=1 base_pred=1 model_pred=1 ack=True correct=True model_match=True infer_ms=42
+index=2 label=2 pred=2 base_pred=2 model_pred=2 ack=True correct=True model_match=True infer_ms=42
+index=3 label=3 pred=3 base_pred=15 model_pred=3 ack=True correct=True model_match=False infer_ms=42
+index=4 label=4 pred=4 base_pred=4 model_pred=4 ack=True correct=True model_match=True infer_ms=42
+index=5 label=5 pred=5 base_pred=5 model_pred=5 ack=True correct=True model_match=True infer_ms=42
+index=6 label=6 pred=6 base_pred=6 model_pred=6 ack=True correct=True model_match=True infer_ms=44
+index=7 label=7 pred=7 base_pred=7 model_pred=7 ack=True correct=True model_match=True infer_ms=42
+index=8 label=8 pred=8 base_pred=8 model_pred=8 ack=True correct=True model_match=True infer_ms=44
+index=9 label=9 pred=8 base_pred=8 model_pred=8 ack=True correct=False model_match=True infer_ms=44
+index=10 label=10 pred=10 base_pred=10 model_pred=10 ack=True correct=True model_match=True infer_ms=42
+index=11 label=11 pred=11 base_pred=11 model_pred=11 ack=True correct=True model_match=True infer_ms=42
+index=12 label=12 pred=12 base_pred=12 model_pred=12 ack=True correct=True model_match=True infer_ms=42
+index=13 label=13 pred=13 base_pred=13 model_pred=13 ack=True correct=True model_match=True infer_ms=42
+index=14 label=14 pred=14 base_pred=14 model_pred=14 ack=True correct=True model_match=True infer_ms=42
+index=15 label=15 pred=15 base_pred=15 model_pred=15 ack=True correct=True model_match=True infer_ms=42
+index=16 label=16 pred=16 base_pred=16 model_pred=16 ack=True correct=True model_match=True infer_ms=42
+index=17 label=17 pred=17 base_pred=17 model_pred=17 ack=True correct=True model_match=True infer_ms=42
+index=18 label=18 pred=18 base_pred=18 model_pred=18 ack=True correct=True model_match=True infer_ms=42
+index=19 label=19 pred=19 base_pred=19 model_pred=19 ack=True correct=True model_match=True infer_ms=42
+index=20 label=20 pred=20 base_pred=20 model_pred=20 ack=True correct=True model_match=True infer_ms=45
+index=21 label=21 pred=21 base_pred=20 model_pred=20 ack=True correct=True model_match=True infer_ms=45
+index=22 label=22 pred=22 base_pred=22 model_pred=22 ack=True correct=True model_match=True infer_ms=42
+index=23 label=23 pred=23 base_pred=23 model_pred=23 ack=True correct=True model_match=True infer_ms=42
+index=24 label=24 pred=24 base_pred=6 model_pred=6 ack=True correct=True model_match=True infer_ms=44
+index=25 label=25 pred=25 base_pred=25 model_pred=25 ack=True correct=True model_match=True infer_ms=42
+label_match=25/26
+model_match=25/26
+infer_ms_avg=42.54 count=26

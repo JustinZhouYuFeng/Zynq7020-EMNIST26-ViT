@@ -1,0 +1,58 @@
+# Vivado / Vitis temporary files
+.Xil/
+*.jou
+*.log
+*.str
+*.tmp
+*.backup.*
+*.cache/
+*.hw/
+*.runs/
+*.sim/
+*.gen/
+*.ip_user_files/
+*.srcs/**/ip/*/
+*.srcs/**/ipshared/*/
+*.srcs/**/sim/
+*.srcs/**/synth/
+*.srcs/**/sources_1/bd/**/ip/
+*.srcs/**/sources_1/bd/**/ipshared/
+**/impl/ip/tmp.srcs/
+**/impl/ip/.Xil/
+**/impl/ip/*.cache/
+**/impl/ip/*.gen/
+**/impl/ip/*.runs/
+**/impl/ip/*.sim/
+
+# Vitis build outputs
+Debug/
+Release/
+*.elf
+*.o
+*.d
+
+# FPGA generated binaries
+*.bit
+*.bin
+*.mmi
+*.ltx
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Temporary folders
+tmp_*/
+report_build_*/
+reports/
+
+# Eclipse / Vitis workspace metadata
+.analytics
+.claude/
+.metadata/
+.sdk/
+RemoteSystemsTempFiles/
+
+# Word temporary lock files
+~$*.docx
