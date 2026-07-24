@@ -2,6 +2,7 @@
 .Xil/
 *.jou
 *.log
+!validation_results/board_520/uart.log
 *.str
 *.tmp
 *.backup.*
@@ -41,11 +42,18 @@ Release/
 __pycache__/
 *.pyc
 .venv/
+data/
+checkpoints/*_reproduced.pt
+validation_results/reproduced_*/
+test_data/emnist_letters_stratified_520/*.png
+test_data/emnist_letters_stratified_520/*.raw
 
 # Temporary folders
 tmp_*/
 report_build_*/
 reports/
+!hls/reports/
+!hls/reports/vit_transformer_layer_fused_csynth.rpt
 
 # Eclipse / Vitis workspace metadata
 .analytics

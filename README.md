@@ -111,7 +111,7 @@ Patch Embedding 的卷积核和步长均为 7，patch 之间不重叠，因此�
 
 6. 从最终 `.pt` checkpoint 中导出 Patch、CLS、位置编码、三层 Encoder 与分类头浮点参数，生成 [`src/tinyvit_samples_vitis.h`](src/tinyvit_samples_vitis.h)。
 
-本仓库是板端部署发布包，重点提供 Vitis 裸机固件、HLS IP、生成后的模型参数头文件、硬件产物和验证材料。PyTorch 不在 FPGA 上运行，Zynq 裸机端也不解析 `.pt` 文件。
+本仓库已补齐从 PyTorch 建模与训练、checkpoint、权重融合、参数导出、HLS 综合到板级验证的完整主线。PyTorch 不在 FPGA 上运行，Zynq 裸机端也不解析 `.pt` 文件。完整复现步骤见 [`docs/TRAINING_AND_EXPORT.md`](docs/TRAINING_AND_EXPORT.md)。
 
 ## HLS 实现
 
@@ -182,11 +182,16 @@ accuracy = 90.2740%
 
 | Path | 内容 |
 | --- | --- |
+| [`pytorch/`](pytorch/) | TinyViT 定义、基础训练、知识蒸馏与单样本推理 |
+| [`checkpoints/`](checkpoints/) | 基础模型、CNN 教师、蒸馏模型、AccBoost 和最终部署 checkpoint |
+| [`hls/`](hls/) | 最终融合 Encoder 源码、u16 C 仿真/综合/导出脚本和 HLS 报告 |
 | [`src/`](src/) | Vitis 裸机应用、最终模型参数和类别对实验参数 |
-| [`tools/`](tools/) | HLS 源码、IP 打包、Vivado/Vitis 构建和 UDP 验证脚本 |
+| [`tools/`](tools/) | 参数融合与导出、软件评估、样本生成、Vivado/Vitis 构建和 UDP 验证脚本 |
 | [`drivers/`](drivers/) | `vit_transformer_layer_fused` HLS IP 驱动 |
-| [`test_data/`](test_data/) | 26 类基础 UDP 演示样本 |
+| [`test_data/`](test_data/) | 26 类基础 UDP 演示样本和 520 张确定性抽样清单 |
+| [`validation_results/`](validation_results/) | 20,800 张软件评估和 520 张板测逐样本证据 |
 | [`reports/`](reports/) | 布线后资源、时序和 IP 状态报告 |
+| [`docs/`](docs/) | 完整训练、导出和板测复现文档 |
 | [`assets/`](assets/) | 项目结构图 |
 | [`使用说明_26分类EMNIST_ViT部署.md`](使用说明_26分类EMNIST_ViT部署.md) | 中文部署使用说明 |
 | [`部署细节_26分类EMNIST_ViT.md`](部署细节_26分类EMNIST_ViT.md) | 中文实现细节 |
@@ -200,7 +205,45 @@ accuracy = 90.2740%
 
 其中 `25/26` 日志是早期固定 26 张演示集的快速连通性验证，不是完整测试集准确率，也不是最新 520 张板测统计。
 
-## 快速验证
+## 软件快速复现
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+
+# 完整 20,800 张测试集评估
+.\.venv\Scripts\python.exe tools\evaluate_emnist_checkpoint.py --device cpu
+
+# 重建 14/86 权重融合，并与最终部署 checkpoint 逐 tensor 精确比对
+.\.venv\Scripts\python.exe tools\blend_emnist_checkpoints.py `
+  --reference checkpoints\tiny_vit_emnist_letters_depth3_mlp256_soup_a086.pt
+
+# 从最终 checkpoint 重新导出模型参数和 26 张联调样本
+.\.venv\Scripts\python.exe tools\generate_vitis_tinyvit_samples.py `
+  --dataset emnist-letters `
+  --ckpt checkpoints\tiny_vit_emnist_letters_depth3_mlp256_soup_a086.pt `
+  --raw-dir test_data\emnist_letters_udp `
+  --count 26 `
+  --out validation_results\reproduced_export\tinyvit_samples_vitis.h
+
+# 对比重新导出的 Vitis 头文件：模型参数必须完全一致
+.\.venv\Scripts\python.exe tools\compare_vitis_headers.py `
+  src\tinyvit_samples_vitis.h `
+  validation_results\reproduced_export\tinyvit_samples_vitis.h
+```
+
+预期关键输出：
+
+```text
+test_correct=18777/20800
+test_accuracy=90.274038%
+reference_match=PASS tensors=44 max_abs_diff=0.000000000e+00
+header_match=PASS
+```
+
+训练、蒸馏、参数导出、520 张样本生成和 HLS 重建命令见 [`docs/TRAINING_AND_EXPORT.md`](docs/TRAINING_AND_EXPORT.md)。
+
+## 板端快速验证
 
 默认网络和串口配置：
 
@@ -217,6 +260,16 @@ powershell -ExecutionPolicy Bypass -File tools\verify_udp_classification_batch.p
   -VitisHeader src\tinyvit_samples_vitis.h `
   -Count 26 `
   -DelayMs 2500 `
+  -SerialPort COM9
+```
+
+生成并运行完整 520 张类别均衡验证：
+
+```powershell
+.\.venv\Scripts\python.exe tools\prepare_emnist_stratified_udp.py
+powershell -ExecutionPolicy Bypass -File tools\verify_udp_emnist_stratified.ps1 `
+  -DataDir test_data\emnist_letters_stratified_520 `
+  -OutDir validation_results\reproduced_board_520 `
   -SerialPort COM9
 ```
 
